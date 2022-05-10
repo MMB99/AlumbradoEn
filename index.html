@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico","name":"Vocabulary for the representation of the Public lighting", "headline":"Esta versión ha sido generada durante el desarrollo del trabajo fin de grado", "datePublished":"Mon May 09 17:40:36 CEST 2022", "author":[{"@type":"Person","name":"Marian Martín Blázquez - Universidad Politécnica de Madrid"},{"@type":"Person","name":"Oscar Corcho García (Ontology Engineering Group - Universidad Politécnica de Madrid)"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico","name":"Vocabulary for the representation of the Public lighting", "headline":"Esta versión ha sido generada durante el desarrollo del trabajo fin de grado", "datePublished":"Tue May 10 19:23:19 CEST 2022", "author":[{"@type":"Person","name":"Marian Martín Blázquez - Universidad Politécnica de Madrid"},{"@type":"Person","name":"Oscar Corcho García (Ontology Engineering Group - Universidad Politécnica de Madrid)"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -79,13 +79,7 @@ $(function(){
 <span>Ontology Specification Draft</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-Esta versión ha sido generada durante el desarrollo del trabajo fin de grado</span>
-</div>
-<div id="toc"></div> 
-
-<!--INTRODUCTION SECTION-->
-    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">This vocabulary will be used to describe the public lighting (streetlights).</span>
+This version has benn generated during the development of the TFG</span>
 <p>We are going to reuse same terms of various vocabularies that are currently used</p>
 <ul>
    <li><a href="http://schema.org/">schema.org</a></li>
@@ -95,6 +89,13 @@ Esta versión ha sido generada durante el desarrollo del trabajo fin de grado</s
    <li><a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal/">esdir from the open city data iniciative</a></li>
    <li><a href="http://www.opengis.net/ont/geosparql#">geosparql</a>
 </ul>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">This vocabulary will be used to describe the public lighting (streetlights).</span>
+<p>We are going to reuse same terms of various vocabularies that are currently used</p>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -105,21 +106,18 @@ Esta versión ha sido generada durante el desarrollo del trabajo fin de grado</s
 <tr><td></td><td></td></tr>
 <tr><td><b>schema</b></td><td>&lt;http://schema.org&gt;</td></tr>
 <tr><td><b>direccion-postal</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal&gt;</td></tr>
-<tr><td><b>territorio2</b></td><td>&lt;http://vocab.linkeddata.es/def/secctor-public/territorio&gt;</td></tr>
-<tr><td><b>territorio3</b></td><td>&lt;http://vocab.linkeddata.es/def/secctor-public/territorio&gt;</td></tr>
+<tr><td><b>alumbrado-publico</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico&gt;</td></tr>
 <tr><td><b>equipamiento-municipal</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal&gt;</td></tr>
 <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
 <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
 <tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
 <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
-<tr><td><b>geosparql1</b></td><td>&lt;http://www.opengis.net/spec/geosparql&gt;</td></tr>
 <tr><td><b>geosparql</b></td><td>&lt;http://www.opengis.net/spec/geosparql&gt;</td></tr>
-<tr><td><b>territorio</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio&gt;</td></tr>
+<tr><td><b>esadm</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio&gt;</td></tr>
 <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
 <tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
 <tr><td><b>esequip</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal&gt;</td></tr>
 <tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
-<tr><td><b>schema4</b></td><td>&lt;http://schema.org&gt;</td></tr>
 <tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
 </tbody>
 </table>
@@ -144,9 +142,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">
-         <span>direccion postal</span>
-      </a>
+         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">DireccionPostal</a>
    </li>
    <li>
       <a href="#http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito"
@@ -157,14 +153,10 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento">Equipment</a>
    </li>
    <li>
-      <a href="#http://www.opengis.net/spec/geosparql/Feature" title="http://www.opengis.net/spec/geosparql/Feature">
-         <span>feature</span>
-      </a>
+      <a href="#http://www.opengis.net/spec/geosparql/Feature" title="http://www.opengis.net/spec/geosparql/Feature">Feature</a>
    </li>
    <li>
-      <a href="#http://www.opengis.net/spec/geosparql/Geometry" title="http://www.opengis.net/spec/geosparql/Geometry">
-         <span>geometry</span>
-      </a>
+      <a href="#http://www.opengis.net/spec/geosparql/Geometry" title="http://www.opengis.net/spec/geosparql/Geometry">Geometry</a>
    </li>
    <li>
       <a href="#Lampara"
@@ -192,15 +184,11 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste">Pole</a>
    </li>
    <li>
-      <a href="#http://schema.org#PostalAddress" title="http://schema.org#PostalAddress">
-         <span>postal address</span>
-      </a>
+      <a href="#http://schema.org#PostalAddress" title="http://schema.org#PostalAddress">PostalAddress</a>
    </li>
    <li>
       <a href="#http://www.opengis.net/spec/geosparql/SpatialObject"
-         title="http://www.opengis.net/spec/geosparql/SpatialObject">
-         <span>spatial object</span>
-      </a>
+         title="http://www.opengis.net/spec/geosparql/SpatialObject">SpatialObject</a>
    </li>
 </ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
@@ -211,6 +199,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#caja"
          title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#caja">box</a>
+   </li>
+   <li>
+      <a href="#tipoCable"
+         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable">cableType</a>
    </li>
    <li>
       <a href="#http://vocab.linkeddata.es/def/secctor-public/territorio/distrito"
@@ -225,8 +217,32 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#tieneLampara"
+         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara">hasLamp</a>
+   </li>
+   <li>
+      <a href="#tipoSoporte"
+         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte">holderType</a>
+   </li>
+   <li>
+      <a href="#tipoIluminacion"
+         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion">IluminationType</a>
+   </li>
+   <li>
+      <a href="#tipoLampara"
+         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara">lampType</a>
+   </li>
+   <li>
+      <a href="#tipoAlumbrado"
+         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado">lightingType</a>
+   </li>
+   <li>
       <a href="#luminaria"
          title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#luminaria">luminary</a>
+   </li>
+   <li>
+      <a href="#tipoLuminaria"
+         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria">luminaryType</a>
    </li>
    <li>
       <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio"
@@ -239,50 +255,8 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#poste">pole</a>
    </li>
    <li>
-      <a href="#tieneLampara"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara">tieneLampara</a>
-   </li>
-   <li>
       <a href="#tipoAlimentacion"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion">
-         <span>tipo alimentacion</span>
-      </a>
-   </li>
-   <li>
-      <a href="#tipoAlumbrado"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado">
-         <span>tipo alumbrado</span>
-      </a>
-   </li>
-   <li>
-      <a href="#tipoCable"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable">
-         <span>tipo cable</span>
-      </a>
-   </li>
-   <li>
-      <a href="#tipoIluminacion"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion">
-         <span>tipo iluminacion</span>
-      </a>
-   </li>
-   <li>
-      <a href="#tipoLampara"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara">
-         <span>tipo lampara</span>
-      </a>
-   </li>
-   <li>
-      <a href="#tipoLuminaria"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria">
-         <span>tipo luminaria</span>
-      </a>
-   </li>
-   <li>
-      <a href="#tipoSoporte"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte">
-         <span>tipo soporte</span>
-      </a>
+         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion">powerType</a>
    </li>
 </ul><h4>Data Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
@@ -400,46 +374,32 @@ This ontology has the following classes and properties.</span>
    </li>
 </ul><h4>Named Individuals</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
-      <a href="#tipoAlimentacion"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion">
-         <span>tipo alimentacion</span>
-      </a>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable"
+         title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable">cableType</a>
    </li>
    <li>
-      <a href="#tipoAlumbrado"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado">
-         <span>tipo alumbrado</span>
-      </a>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte"
+         title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte">holderType</a>
    </li>
    <li>
-      <a href="#tipoCable"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable">
-         <span>tipo cable</span>
-      </a>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion"
+         title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion">iluminationType</a>
    </li>
    <li>
-      <a href="#tipoIluminacion"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion">
-         <span>tipo iluminacion</span>
-      </a>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara"
+         title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara">lampType</a>
    </li>
    <li>
-      <a href="#tipoLampara"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara">
-         <span>tipo lampara</span>
-      </a>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado"
+         title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado">lightingType</a>
    </li>
    <li>
-      <a href="#tipoLuminaria"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria">
-         <span>tipo luminaria</span>
-      </a>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria"
+         title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria">LuminaryType</a>
    </li>
    <li>
-      <a href="#tipoSoporte"
-         title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte">
-         <span>tipo soporte</span>
-      </a>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion"
+         title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion">powerType</a>
    </li>
 </ul>
 </div>
@@ -448,7 +408,7 @@ This ontology has the following classes and properties.</span>
 <!--DESCRIPTION SECTION-->
     <div id="description"><h2 id="desc" class="list">Vocabulary for the representation of the Public lighting: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown"></span>
-<p>The figure from below shows the classes and properties from the vocabulary of the public lighting. The objective of this vocabulary is to portray the parts that form a streetlight, it´s caracteristics and properties.
+p>The figure from below shows the classes and properties from the vocabulary of the public lighting. The objective of this vocabulary is to portray the parts that form a streetlight, it´s caracteristics and properties.
 </p>
 <center> 
    <img src="resources/images/lightingDiagram.png"width="1511" heigh="631">
@@ -467,7 +427,7 @@ With the goal of making easier to understand the use of some of these classes an
    The data property that has this class in this case id the id that is shared between the streetlights from the same street <a href="#id" title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#id">esalumb:id</a>.
 </p>
 <p> 
-   The class <a href="#Lamp" title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lamp">esalumb:Lamp</a> has a skos list with the lamp type that is used <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#lampType">esalumb:lampType</a> and an atribute that represents the bulb model.
+   The class <a href="#Lamp" title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lamp">esalumb:Lamp</a> has a skos list with the lamp type that is used <a href="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico#lampType">skos-esalumb:lampType</a> and an atribute that represents the bulb model.
 </p>
 <p>
    Besides the class <a href="#Streetlight" title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Streetlight">esalumb:Streetlight</a> we reuse other classes:
@@ -514,9 +474,7 @@ This section provides details for each class and property defined by Vocabulary 
       </li>
       <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">
-            <span>direccion postal</span>
-         </a>
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">DireccionPostal</a>
       </li>
       <li>
          <a href="#http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito"
@@ -527,14 +485,10 @@ This section provides details for each class and property defined by Vocabulary 
             title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento">Equipment</a>
       </li>
       <li>
-         <a href="#http://www.opengis.net/spec/geosparql/Feature" title="http://www.opengis.net/spec/geosparql/Feature">
-            <span>feature</span>
-         </a>
+         <a href="#http://www.opengis.net/spec/geosparql/Feature" title="http://www.opengis.net/spec/geosparql/Feature">Feature</a>
       </li>
       <li>
-         <a href="#http://www.opengis.net/spec/geosparql/Geometry" title="http://www.opengis.net/spec/geosparql/Geometry">
-            <span>geometry</span>
-         </a>
+         <a href="#http://www.opengis.net/spec/geosparql/Geometry" title="http://www.opengis.net/spec/geosparql/Geometry">Geometry</a>
       </li>
       <li>
          <a href="#Lampara"
@@ -562,15 +516,11 @@ This section provides details for each class and property defined by Vocabulary 
             title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste">Pole</a>
       </li>
       <li>
-         <a href="#http://schema.org#PostalAddress" title="http://schema.org#PostalAddress">
-            <span>postal address</span>
-         </a>
+         <a href="#http://schema.org#PostalAddress" title="http://schema.org#PostalAddress">PostalAddress</a>
       </li>
       <li>
          <a href="#http://www.opengis.net/spec/geosparql/SpatialObject"
-            title="http://www.opengis.net/spec/geosparql/SpatialObject">
-            <span>spatial object</span>
-         </a>
+            title="http://www.opengis.net/spec/geosparql/SpatialObject">SpatialObject</a>
       </li>
    </ul>
    <div class="entity" id="Caja">
@@ -584,17 +534,15 @@ This section provides details for each class and property defined by Vocabulary 
          <span class="markdown">Place where the cables of the streetlight are accesible</span>
       </div>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd/>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#fabricante"
+            <a href="#tipoCable"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable">cableType</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#fabricante"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#fabricante">manufacturer</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#material"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#material">material</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#tipoCable"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable">tipo cable</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -622,26 +570,26 @@ This section provides details for each class and property defined by Vocabulary 
       <dl class="description">
          <dt>has members</dt>
          <dd>
-            <a href="#tipoAlimentacion"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion">tipo alimentacion</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#tipoAlumbrado"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado">tipo alumbrado</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#tipoCable"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable">tipo cable</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#tipoIluminacion"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion">tipo iluminacion</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#tipoLampara"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara">tipo lampara</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#tipoLuminaria"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria">tipo luminaria</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#tipoSoporte"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte">tipo soporte</a>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria">LuminaryType</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable">cableType</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte">holderType</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion">iluminationType</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara">lampType</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado">lightingType</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion">powerType</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">
-      <h3>direccion postal<sup class="type-c" title="class">c</sup>
+      <h3>DireccionPostal<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -654,7 +602,7 @@ This section provides details for each class and property defined by Vocabulary 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://schema.org#PostalAddress" title="http://schema.org#PostalAddress">postal address</a>
+            <a href="#http://schema.org#PostalAddress" title="http://schema.org#PostalAddress">PostalAddress</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -714,7 +662,7 @@ This section provides details for each class and property defined by Vocabulary 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://www.opengis.net/spec/geosparql/Feature" title="http://www.opengis.net/spec/geosparql/Feature">feature</a>
+            <a href="#http://www.opengis.net/spec/geosparql/Feature" title="http://www.opengis.net/spec/geosparql/Feature">Feature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -738,7 +686,7 @@ This section provides details for each class and property defined by Vocabulary 
       </dl>
    </div>
    <div class="entity" id="http://www.opengis.net/spec/geosparql/Feature">
-      <h3>feature<sup class="type-c" title="class">c</sup>
+      <h3>Feature<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -756,7 +704,7 @@ This section provides details for each class and property defined by Vocabulary 
          <dt>has super-classes</dt>
          <dd>
             <a href="#http://www.opengis.net/spec/geosparql/SpatialObject"
-               title="http://www.opengis.net/spec/geosparql/SpatialObject">spatial object</a>
+               title="http://www.opengis.net/spec/geosparql/SpatialObject">SpatialObject</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -774,7 +722,7 @@ This section provides details for each class and property defined by Vocabulary 
       </dl>
    </div>
    <div class="entity" id="http://www.opengis.net/spec/geosparql/Geometry">
-      <h3>geometry<sup class="type-c" title="class">c</sup>
+      <h3>Geometry<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -792,7 +740,7 @@ This section provides details for each class and property defined by Vocabulary 
          <dt>has super-classes</dt>
          <dd>
             <a href="#http://www.opengis.net/spec/geosparql/SpatialObject"
-               title="http://www.opengis.net/spec/geosparql/SpatialObject">spatial object</a>
+               title="http://www.opengis.net/spec/geosparql/SpatialObject">SpatialObject</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -829,7 +777,9 @@ This section provides details for each class and property defined by Vocabulary 
          <dd>
             <a href="#consumo"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#consumo">consume</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#intensidadLuminica"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#tipoLampara"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara">lampType</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#intensidadLuminica"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#intensidadLuminica">lightOutput</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#fabricante"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#fabricante">manufacturer</a>
@@ -839,14 +789,12 @@ This section provides details for each class and property defined by Vocabulary 
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#numeroDeLamparas">numberOfLamps</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#potencia"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#potencia">power</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#tipoLampara"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara">tipo lampara</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#tieneLampara"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara">tieneLampara</a>
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara">hasLamp</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -870,7 +818,9 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://schema.org/address" title="http://schema.org/address">address</a>
+            <a href="#tipoIluminacion"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion">IluminationType</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://schema.org/address" title="http://schema.org/address">address</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#caja"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#caja">box</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#modeloBombilla"
@@ -881,18 +831,16 @@ This section provides details for each class and property defined by Vocabulary 
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#metodoDeControl">controlMethod</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#altura"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#altura">heigh</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#luminaria"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#tipoAlumbrado"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado">lightingType</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#luminaria"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#luminaria">luminary</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#propietario"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#propietario">owner</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#poste"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#poste">pole</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#tipoAlimentacion"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion">tipo alimentacion</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#tipoAlumbrado"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado">tipo alumbrado</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#tipoIluminacion"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion">tipo iluminacion</a>
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion">powerType</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#anchura"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#anchura">width</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#horasDeFuncionamiento"
@@ -912,8 +860,6 @@ This section provides details for each class and property defined by Vocabulary 
          <span class="markdown">Lighting fixture that distributes, filters or transforms the light emitted by the lamps</span>
       </div>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd/>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#Lampara"
@@ -922,17 +868,17 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#fabricante"
+            <a href="#tieneLampara"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara">hasLamp</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#tipoLuminaria"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria">luminaryType</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#fabricante"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#fabricante">manufacturer</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#material"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#material">material</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numeroDeLuminarias"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#numeroDeLuminarias">numberOfLuminaries</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#tieneLampara"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara">tieneLampara</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#tipoLuminaria"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria">tipo luminaria</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -984,7 +930,7 @@ This section provides details for each class and property defined by Vocabulary 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://www.opengis.net/spec/geosparql/Geometry" title="http://www.opengis.net/spec/geosparql/Geometry">geometry</a>
+            <a href="#http://www.opengis.net/spec/geosparql/Geometry" title="http://www.opengis.net/spec/geosparql/Geometry">Geometry</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -1006,8 +952,6 @@ This section provides details for each class and property defined by Vocabulary 
          <span class="markdown">Class that represents the column that is placed verticaly so it helps as a support</span>
       </div>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd/>
          <dt>is in domain of</dt>
          <dd>
             <a href="#accesorios"
@@ -1016,15 +960,15 @@ This section provides details for each class and property defined by Vocabulary 
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#alturaBrazo1">armHeigh2</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#alturaBrazo2"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#alturaBrazo2">armHeigh2</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#fabricante"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#tipoSoporte"
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte">holderType</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#fabricante"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#fabricante">manufacturer</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#material"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#material">material</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numeroDeBrazos"
                title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#numeroDeBrazos">numberOfArms</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#tipoSoporte"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte">tipo soporte</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -1035,7 +979,7 @@ This section provides details for each class and property defined by Vocabulary 
       </dl>
    </div>
    <div class="entity" id="http://schema.org#PostalAddress">
-      <h3>postal address<sup class="type-c" title="class">c</sup>
+      <h3>PostalAddress<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -1050,7 +994,7 @@ This section provides details for each class and property defined by Vocabulary 
          <dt>has sub-classes</dt>
          <dd>
             <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">direccion postal</a>
+               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">DireccionPostal</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -1063,7 +1007,7 @@ This section provides details for each class and property defined by Vocabulary 
       </dl>
    </div>
    <div class="entity" id="http://www.opengis.net/spec/geosparql/SpatialObject">
-      <h3>spatial object<sup class="type-c" title="class">c</sup>
+      <h3>SpatialObject<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -1080,8 +1024,8 @@ This section provides details for each class and property defined by Vocabulary 
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://www.opengis.net/spec/geosparql/Feature" title="http://www.opengis.net/spec/geosparql/Feature">feature</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://www.opengis.net/spec/geosparql/Geometry" title="http://www.opengis.net/spec/geosparql/Geometry">geometry</a>
+            <a href="#http://www.opengis.net/spec/geosparql/Feature" title="http://www.opengis.net/spec/geosparql/Feature">Feature</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://www.opengis.net/spec/geosparql/Geometry" title="http://www.opengis.net/spec/geosparql/Geometry">Geometry</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1099,6 +1043,10 @@ This section provides details for each class and property defined by Vocabulary 
             title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#caja">box</a>
       </li>
       <li>
+         <a href="#tipoCable"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable">cableType</a>
+      </li>
+      <li>
          <a href="#http://vocab.linkeddata.es/def/secctor-public/territorio/distrito"
             title="http://vocab.linkeddata.es/def/secctor-public/territorio/distrito">
             <span>distrito</span>
@@ -1111,8 +1059,32 @@ This section provides details for each class and property defined by Vocabulary 
          </a>
       </li>
       <li>
+         <a href="#tieneLampara"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara">hasLamp</a>
+      </li>
+      <li>
+         <a href="#tipoSoporte"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte">holderType</a>
+      </li>
+      <li>
+         <a href="#tipoIluminacion"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion">IluminationType</a>
+      </li>
+      <li>
+         <a href="#tipoLampara"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara">lampType</a>
+      </li>
+      <li>
+         <a href="#tipoAlumbrado"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado">lightingType</a>
+      </li>
+      <li>
          <a href="#luminaria"
             title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#luminaria">luminary</a>
+      </li>
+      <li>
+         <a href="#tipoLuminaria"
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria">luminaryType</a>
       </li>
       <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio"
@@ -1125,50 +1097,8 @@ This section provides details for each class and property defined by Vocabulary 
             title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#poste">pole</a>
       </li>
       <li>
-         <a href="#tieneLampara"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara">tieneLampara</a>
-      </li>
-      <li>
          <a href="#tipoAlimentacion"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion">
-            <span>tipo alimentacion</span>
-         </a>
-      </li>
-      <li>
-         <a href="#tipoAlumbrado"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado">
-            <span>tipo alumbrado</span>
-         </a>
-      </li>
-      <li>
-         <a href="#tipoCable"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable">
-            <span>tipo cable</span>
-         </a>
-      </li>
-      <li>
-         <a href="#tipoIluminacion"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion">
-            <span>tipo iluminacion</span>
-         </a>
-      </li>
-      <li>
-         <a href="#tipoLampara"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara">
-            <span>tipo lampara</span>
-         </a>
-      </li>
-      <li>
-         <a href="#tipoLuminaria"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria">
-            <span>tipo luminaria</span>
-         </a>
-      </li>
-      <li>
-         <a href="#tipoSoporte"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte">
-            <span>tipo soporte</span>
-         </a>
+            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion">powerType</a>
       </li>
    </ul>
    <div class="entity" id="http://schema.org/address">
@@ -1178,6 +1108,9 @@ This section provides details for each class and property defined by Vocabulary 
       </h3>
       <p>
          <strong>IRI:</strong> http://schema.org/address</p>
+      <div class="comment">
+         <span class="markdown">Relation between the Streetlight class and the DireccionPostal class</span>
+      </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
@@ -1194,7 +1127,7 @@ This section provides details for each class and property defined by Vocabulary 
             <dt>has range</dt>
             <dd>
                <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"
-                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">direccion postal</a>
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">DireccionPostal</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1227,6 +1160,27 @@ This section provides details for each class and property defined by Vocabulary 
          </dl>
       </div>
    </div>
+   <div class="entity" id="tipoCable">
+      <h3>cableType<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable</p>
+      <div class="comment">
+         <span class="markdown">Relation between the Box class ant the skos list about the type of cable</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Caja"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Caja">Box</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://vocab.linkeddata.es/def/secctor-public/territorio/distrito">
       <h3>distrito<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1239,7 +1193,7 @@ This section provides details for each class and property defined by Vocabulary 
             <dt>has domain</dt>
             <dd>
                <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"
-                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">direccion postal</a>
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">DireccionPostal</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1269,12 +1223,124 @@ This section provides details for each class and property defined by Vocabulary 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://www.opengis.net/spec/geosparql/Feature" title="http://www.opengis.net/spec/geosparql/Feature">feature</a>
+               <a href="#http://www.opengis.net/spec/geosparql/Feature" title="http://www.opengis.net/spec/geosparql/Feature">Feature</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://www.opengis.net/spec/geosparql/Geometry" title="http://www.opengis.net/spec/geosparql/Geometry">geometry</a>
+               <a href="#http://www.opengis.net/spec/geosparql/Geometry" title="http://www.opengis.net/spec/geosparql/Geometry">Geometry</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tieneLampara">
+      <h3>hasLamp<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara</p>
+      <div class="comment">
+         <span class="markdown">Relation between the Luminary class and the Lamp class.
+Every luminary has a bulb</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Luminaria"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria">Luminary</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Lampara"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara">Lamp</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tipoSoporte">
+      <h3>holderType<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte</p>
+      <div class="comment">
+         <span class="markdown">Relation between the Pole class and the skos list about the types of holers</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Poste"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste">Pole</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tipoIluminacion">
+      <h3>IluminationType<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion</p>
+      <div class="comment">
+         <span class="markdown">Relation between the Streetlight class and the skos list about the types of iluminations</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Farola"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola">Lampost</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tipoLampara">
+      <h3>lampType<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara</p>
+      <div class="comment">
+         <span class="markdown">Relation between the Lamp class and the skos list about the types of lamps</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Lampara"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara">Lamp</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tipoAlumbrado">
+      <h3>lightingType<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado</p>
+      <div class="comment">
+         <span class="markdown">Relation between the Streetlight class and the skos list about the types of lighting</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Farola"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola">Lampost</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1307,6 +1373,27 @@ This section provides details for each class and property defined by Vocabulary 
          </dl>
       </div>
    </div>
+   <div class="entity" id="tipoLuminaria">
+      <h3>luminaryType<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria</p>
+      <div class="comment">
+         <span class="markdown">Relation between the Luminary class and the skos list about the types of luminaries</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Luminaria"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria">Luminary</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio">
       <h3>neighborhood<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1319,7 +1406,7 @@ This section provides details for each class and property defined by Vocabulary 
             <dt>has domain</dt>
             <dd>
                <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"
-                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">direccion postal</a>
+                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">DireccionPostal</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1362,40 +1449,16 @@ This section provides details for each class and property defined by Vocabulary 
          </dl>
       </div>
    </div>
-   <div class="entity" id="tieneLampara">
-      <h3>tieneLampara<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara</p>
-      <div class="comment">
-         <span class="markdown">Every luminary has a bulb</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Luminaria"
-                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria">Luminary</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Lampara"
-                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara">Lamp</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="tipoAlimentacion">
-      <h3>tipo alimentacion<sup class="type-op" title="object property">op</sup>
+      <h3>powerType<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion</p>
+      <div class="comment">
+         <span class="markdown">Relation between the Streetlight class and the skos list about the power type</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1403,142 +1466,6 @@ This section provides details for each class and property defined by Vocabulary 
                <a href="#Farola"
                   title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola">Lampost</a>
                <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#tipoAlimentacion">named individual</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="tipoAlumbrado">
-      <h3>tipo alumbrado<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Farola"
-                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola">Lampost</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#tipoAlumbrado">named individual</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="tipoCable">
-      <h3>tipo cable<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Caja"
-                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Caja">Box</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#tipoCable">named individual</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="tipoIluminacion">
-      <h3>tipo iluminacion<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Farola"
-                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola">Lampost</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#tipoIluminacion">named individual</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="tipoLampara">
-      <h3>tipo lampara<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Lampara"
-                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara">Lamp</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#tipoLampara">named individual</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="tipoLuminaria">
-      <h3>tipo luminaria<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Luminaria"
-                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria">Luminary</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#tipoLuminaria">named individual</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="tipoSoporte">
-      <h3>tipo soporte<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Poste"
-                  title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste">Pole</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#tipoSoporte">named individual</a>
             </dd>
          </dl>
       </div>
@@ -1703,7 +1630,7 @@ This section provides details for each class and property defined by Vocabulary 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://schema.org#PostalAddress" title="http://schema.org#PostalAddress">postal address</a>
+               <a href="#http://schema.org#PostalAddress" title="http://schema.org#PostalAddress">PostalAddress</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1734,7 +1661,7 @@ This section provides details for each class and property defined by Vocabulary 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://schema.org#PostalAddress" title="http://schema.org#PostalAddress">postal address</a>
+               <a href="#http://schema.org#PostalAddress" title="http://schema.org#PostalAddress">PostalAddress</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2364,7 +2291,7 @@ This section provides details for each class and property defined by Vocabulary 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://schema.org#PostalAddress" title="http://schema.org#PostalAddress">postal address</a>
+               <a href="#http://schema.org#PostalAddress" title="http://schema.org#PostalAddress">PostalAddress</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2428,185 +2355,164 @@ This section provides details for each class and property defined by Vocabulary 
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
-         <a href="#tipoAlimentacion"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion">
-            <span>tipo alimentacion</span>
-         </a>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable">cableType</a>
       </li>
       <li>
-         <a href="#tipoAlumbrado"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado">
-            <span>tipo alumbrado</span>
-         </a>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte">holderType</a>
       </li>
       <li>
-         <a href="#tipoCable"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable">
-            <span>tipo cable</span>
-         </a>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion">iluminationType</a>
       </li>
       <li>
-         <a href="#tipoIluminacion"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion">
-            <span>tipo iluminacion</span>
-         </a>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara">lampType</a>
       </li>
       <li>
-         <a href="#tipoLampara"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara">
-            <span>tipo lampara</span>
-         </a>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado">lightingType</a>
       </li>
       <li>
-         <a href="#tipoLuminaria"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria">
-            <span>tipo luminaria</span>
-         </a>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria">LuminaryType</a>
       </li>
       <li>
-         <a href="#tipoSoporte"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte">
-            <span>tipo soporte</span>
-         </a>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion">powerType</a>
       </li>
    </ul>
-   <div class="entity" id="tipoAlimentacion">
-      <h3>tipo alimentacion<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable">
+      <h3>cableType<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable</p>
+      <div class="comment">
+         <span class="markdown">Relation between the Box class and the skos list about the cable type</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
             <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
                title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#tipoAlimentacion">object property</a>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="tipoAlumbrado">
-      <h3>tipo alumbrado<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte">
+      <h3>holderType<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte</p>
+      <div class="comment">
+         <span class="markdown">Link to the skos list that determines what type of pole has a streetlight</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
             <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
                title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#tipoAlumbrado">object property</a>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="tipoCable">
-      <h3>tipo cable<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion">
+      <h3>iluminationType<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion</p>
+      <div class="comment">
+         <span class="markdown">Link to the skos list that determines what type of iluminaation has a streetlight</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
             <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
                title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#tipoCable">object property</a>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="tipoIluminacion">
-      <h3>tipo iluminacion<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara">
+      <h3>lampType<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara</p>
+      <div class="comment">
+         <span class="markdown">Link to the skos list that determines what type of lamp has a streetlight</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
             <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
                title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#tipoIluminacion">object property</a>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="tipoLampara">
-      <h3>tipo lampara<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado">
+      <h3>lightingType<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado</p>
+      <div class="comment">
+         <span class="markdown">Link to the skos list that determines what type of lighting has a streetlight</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
             <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
                title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#tipoLampara">object property</a>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="tipoLuminaria">
-      <h3>tipo luminaria<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria">
+      <h3>LuminaryType<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria</p>
+      <div class="comment">
+         <span class="markdown">Link to the skos list that determines what type of luminary has a streetlight</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
             <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
                title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#tipoLuminaria">object property</a>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="tipoSoporte">
-      <h3>tipo soporte<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion">
+      <h3>powerType<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion</p>
+      <div class="comment">
+         <span class="markdown">Link to the skos list that determines what type of source has a streetlight</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
             <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
                title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#tipoSoporte">object property</a>
          </dd>
       </dl>
    </div>
