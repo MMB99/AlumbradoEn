@@ -35,6 +35,8 @@
 <http://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola> .
 <http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre la clase Farola y la clase DireccionPostal"@es .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between the Streetlight class and the DireccionPostal class"@en .
 <http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://schema.org/PostalAddress"@en .
 <http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://schema.org/PostalAddress"@es .
 # 
@@ -74,37 +76,66 @@
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara> <http://www.w3.org/2000/01/rdf-schema#comment> "Cada luminaria tiene una lámpara"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara> <http://www.w3.org/2000/01/rdf-schema#comment> "Every luminary has a bulb"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre la clase Luminaria y la clase Lámpara.\nCada luminaria tiene una lámpara"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between the Luminary class and the Lamp class.\nEvery luminary has a bulb"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara> <http://www.w3.org/2000/01/rdf-schema#label> "hasLamp"@en .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara> <http://www.w3.org/2000/01/rdf-schema#label> "tieneLampara"@es .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre la clase Farola y la lista skos sobre el tipo de alimentación"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between the Streetlight class and the skos list about the power type"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion> <http://www.w3.org/2000/01/rdf-schema#label> "powerType"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion> <http://www.w3.org/2000/01/rdf-schema#label> "tipoAlimentacion"@es .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre la clase Farola y la lista skos sobre el tipo de Alumbrado"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between the Streetlight class and the skos list about the types of lighting"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado> <http://www.w3.org/2000/01/rdf-schema#label> "lightingType"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado> <http://www.w3.org/2000/01/rdf-schema#label> "tipoAlumbrado"@es .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Caja> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre la clase Caja y la lista skos sobre los tipos de cables"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between the Box class ant the skos list about the type of cable"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable> <http://www.w3.org/2000/01/rdf-schema#label> "cableType"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable> <http://www.w3.org/2000/01/rdf-schema#label> "tipoCable"@es .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre la clase Farola y la lista skos sobre el tipo de Iluminación"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between the Streetlight class and the skos list about the types of iluminations"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion> <http://www.w3.org/2000/01/rdf-schema#label> "IluminationType"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion> <http://www.w3.org/2000/01/rdf-schema#label> "tipoIluminacion"@es .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre la clase Lámpara y la lista skos sobre el tipo de lámpara"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between the Lamp class and the skos list about the types of lamps"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara> <http://www.w3.org/2000/01/rdf-schema#label> "lampType"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara> <http://www.w3.org/2000/01/rdf-schema#label> "tipoLampara"@es .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre la clase Luminaria y la lista skos sobre el tipo de luminaria"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between the Luminary class and the skos list about the types of luminaries"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria> <http://www.w3.org/2000/01/rdf-schema#label> "luminaryType"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria> <http://www.w3.org/2000/01/rdf-schema#label> "tipoLuminaria"@es .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre la clase Poste y la lista skos sobre los tipos de postes"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between the Pole class and the skos list about the types of holers"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte> <http://www.w3.org/2000/01/rdf-schema#label> "holderType"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte> <http://www.w3.org/2000/01/rdf-schema#label> "tipoSoporte"@es .
 # 
 # http://vocab.linkeddata.es/def/secctor-public/territorio/distrito
 <http://vocab.linkeddata.es/def/secctor-public/territorio/distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -379,13 +410,11 @@
 <http://schema.org#PostalAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org#PostalAddress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://schema.org/PostalAddress"@en .
 <http://schema.org#PostalAddress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://schema.org/PostalAddress"@es .
+<http://schema.org#PostalAddress> <http://www.w3.org/2000/01/rdf-schema#label> "PostalAddress"@en .
+<http://schema.org#PostalAddress> <http://www.w3.org/2000/01/rdf-schema#label> "PostalAddress"@es .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Caja
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Caja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Caja> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Caja> <http://www.w3.org/2000/01/rdf-schema#comment> "Lugar desde el que se pueden acceder a los cables de la farola"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Caja> <http://www.w3.org/2000/01/rdf-schema#comment> "Place where the cables of the streetlight are accesible"@en .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Caja> <http://www.w3.org/2000/01/rdf-schema#label> "Box"@en .
@@ -394,18 +423,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
-_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
-_:genid4 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola> <http://www.w3.org/2000/01/rdf-schema#comment> "Big lantern that is situated above a pole that brings light to the street or highways"@en .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola> <http://www.w3.org/2000/01/rdf-schema#comment> "Farol grande colocado en alto sobre un poste que sirve para alumbrar las calles y tramos de carreteras"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola> <http://www.w3.org/2000/01/rdf-schema#label> "Farola"@es .
@@ -414,10 +431,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
-_:genid5 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara> <http://www.w3.org/2000/01/rdf-schema#comment> "Es la bombilla de la farola"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the bulb from the streetlight"@en .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara> <http://www.w3.org/2000/01/rdf-schema#label> "Lamp"@en .
@@ -425,10 +438,6 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
-_:genid6 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria> <http://www.w3.org/2000/01/rdf-schema#comment> "Aparato de alumbrado que reparte, filtra o transforma la luz emitida por las lámparas"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria> <http://www.w3.org/2000/01/rdf-schema#comment> "Lighting fixture that distributes, filters or transforms the light emitted by the lamps"@en .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria> <http://www.w3.org/2000/01/rdf-schema#label> "Luminaria"@es .
@@ -436,10 +445,6 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
-_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase que representa la columna que se coloca de forma vertical que srive de apoyo"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents the column that is placed verticaly so it helps as a support"@en .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste> <http://www.w3.org/2000/01/rdf-schema#label> "Pole"@en .
@@ -449,6 +454,8 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org#PostalAddress> .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal/index-en.html" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#label> "DireccionPostal"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#label> "DireccionPostal"@es .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -479,6 +486,8 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.opengis.net/spec/geosparql/Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the top-level feature type. It is superclass of all feature types."@en .
 <http://www.opengis.net/spec/geosparql/Feature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/spec/geosparql/1.1/req/core/feature-class"@en .
 <http://www.opengis.net/spec/geosparql/Feature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/spec/geosparql/1.1/req/core/feature-class"@es .
+<http://www.opengis.net/spec/geosparql/Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature"@en .
+<http://www.opengis.net/spec/geosparql/Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature"@es .
 # 
 # http://www.opengis.net/spec/geosparql/Geometry
 <http://www.opengis.net/spec/geosparql/Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -487,6 +496,8 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.opengis.net/spec/geosparql/Geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "Geometry represents the top level geometry type."@en .
 <http://www.opengis.net/spec/geosparql/Geometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-class"@en .
 <http://www.opengis.net/spec/geosparql/Geometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-class"@es .
+<http://www.opengis.net/spec/geosparql/Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometry"@en .
+<http://www.opengis.net/spec/geosparql/Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometry"@es .
 # 
 # http://www.opengis.net/spec/geosparql/Point
 <http://www.opengis.net/spec/geosparql/Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -500,6 +511,8 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.opengis.net/spec/geosparql/SpatialObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Spatial Object represents everything that can have a spatial representation. It is superclass of feature and geometry"@en .
 <http://www.opengis.net/spec/geosparql/SpatialObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/spec/geosparql/1.1/req/core/spatial-object-class"@en .
 <http://www.opengis.net/spec/geosparql/SpatialObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/spec/geosparql/1.1/req/core/spatial-object-class"@es .
+<http://www.opengis.net/spec/geosparql/SpatialObject> <http://www.w3.org/2000/01/rdf-schema#label> "SpatialObject"@en .
+<http://www.opengis.net/spec/geosparql/SpatialObject> <http://www.w3.org/2000/01/rdf-schema#label> "SpatialObject"@es .
 # 
 # http://www.w3.org/2004/02/skos/core#ConceptScheme
 <http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -518,33 +531,61 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace a la lista skos que determina que tipo de alimentacion tienen las farolas"@es .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the skos list that determines what type of source has a streetlight"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion> <http://www.w3.org/2000/01/rdf-schema#label> "powerType"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion> <http://www.w3.org/2000/01/rdf-schema#label> "tipoAlimentacion"@es .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace a la lista skos que determina que tipo de alumbrado tienen las farolas"@es .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the skos list that determines what type of lighting has a streetlight"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado> <http://www.w3.org/2000/01/rdf-schema#label> "lightingType"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado> <http://www.w3.org/2000/01/rdf-schema#label> "tipoAlumbrado"@es .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre la clase Caja y la lista skos sobre los tipos de cable"@es .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between the Box class and the skos list about the cable type"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable> <http://www.w3.org/2000/01/rdf-schema#label> "cableType"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable> <http://www.w3.org/2000/01/rdf-schema#label> "tipoCable"@es .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace a la lista skos que determina el tipo de iluminación que se utiliza en la farola"@es .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the skos list that determines what type of iluminaation has a streetlight"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion> <http://www.w3.org/2000/01/rdf-schema#label> "iluminationType"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion> <http://www.w3.org/2000/01/rdf-schema#label> "tipoIluminacion"@es .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace a la lista skos que determina el tipo de lámpara que se utiliza en la farola"@es .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the skos list that determines what type of lamp has a streetlight"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara> <http://www.w3.org/2000/01/rdf-schema#label> "lampType"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara> <http://www.w3.org/2000/01/rdf-schema#label> "tipoLampara"@es .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace a la lista skos que determina el tipo de luminaria que tienen las farolas"@es .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the skos list that determines what type of luminary has a streetlight"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria> <http://www.w3.org/2000/01/rdf-schema#label> "LuminaryType"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria> <http://www.w3.org/2000/01/rdf-schema#label> "tipoLuminaria"@es .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace a la lista skos que determina que tipo de soporte tienen las farolas"@es .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the skos list that determines what type of pole has a streetlight"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte> <http://www.w3.org/2000/01/rdf-schema#label> "holderType"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte> <http://www.w3.org/2000/01/rdf-schema#label> "tipoSoporte"@es .
 # 
 # 
 # 
@@ -557,26 +598,5 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio> <http://www.w3.org/2000/01/rdf-schema#label> "barrio"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio> <http://www.w3.org/2000/01/rdf-schema#label> "neighborhood"@en .
-# 
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace a la lista skos que determina que tipo de alimentación tienen las farolas"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the skos list that determines what type of sorce has a streetlight"@en .
-# 
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace a la lista skos que determina que tipo de alumbrado tienen las farolas"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the skos list that determines what type of lighting has a streetlight"@en .
-# 
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace a la lista skos que determina que tipo de cable tienen las farolas"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the skos list that determines what type of cable has a streetlight"@en .
-# 
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace a la lista skos que determina el tipo de iluminación que se utiliza en la farola"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the skos list that determines what type of ilumination has a streetlight"@en .
-# 
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace a la lista skos que determina el tipo de bombilla que se utiliza en la farola"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the skos list that determines what type of bulb has a streetlight"@en .
-# 
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace a la lista skos que determina que tipo de Luminaria tienen las farolas"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the skos list that determines what type of luminary has the streetlight"@en .
-# 
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte> <http://www.w3.org/2000/01/rdf-schema#comment> "Enlace a la lista skos que determina que tipo de soporte tienen las farolas"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the skos list that determines what type of pole has a streetlight"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

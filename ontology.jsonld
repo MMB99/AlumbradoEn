@@ -1,67 +1,4 @@
 [ {
-  "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable"
-  } ]
-}, {
-  "@id" : "_:genid2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion"
-  } ]
-}, {
-  "@id" : "_:genid3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado"
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion"
-  } ]
-}, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara"
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria"
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte"
-  } ]
-}, {
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -76,10 +13,24 @@
   }, {
     "@language" : "es",
     "@value" : "https://schema.org/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PostalAddress"
+  }, {
+    "@language" : "es",
+    "@value" : "PostalAddress"
   } ]
 }, {
   "@id" : "http://schema.org/address",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre la clase Farola y la clase DireccionPostal"
+  }, {
+    "@language" : "en",
+    "@value" : "Relation between the Streetlight class and the DireccionPostal class"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
   } ],
@@ -254,9 +205,6 @@
   }, {
     "@language" : "es",
     "@value" : "Caja"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola",
@@ -277,12 +225,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento"
-  }, {
-    "@id" : "_:genid2"
-  }, {
-    "@id" : "_:genid3"
-  }, {
-    "@id" : "_:genid4"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara",
@@ -303,8 +245,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria"
-  }, {
-    "@id" : "_:genid5"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria",
@@ -322,9 +262,6 @@
   }, {
     "@language" : "en",
     "@value" : "Luminary"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid6"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste",
@@ -342,9 +279,6 @@
   }, {
     "@language" : "es",
     "@value" : "Poste"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid7"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#accesorios",
@@ -744,15 +678,18 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Cada luminaria tiene una lámpara"
+    "@value" : "Relación entre la clase Luminaria y la clase Lámpara.\nCada luminaria tiene una lámpara"
   }, {
     "@language" : "en",
-    "@value" : "Every luminary has a bulb"
+    "@value" : "Relation between the Luminary class and the Lamp class.\nEvery luminary has a bulb"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasLamp"
+  }, {
     "@language" : "es",
     "@value" : "tieneLampara"
   } ],
@@ -761,121 +698,156 @@
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlimentacion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Enlace a la lista skos que determina que tipo de alimentación tienen las farolas"
+    "@value" : "Relación entre la clase Farola y la lista skos sobre el tipo de alimentación"
   }, {
     "@language" : "en",
-    "@value" : "Link to the skos list that determines what type of sorce has a streetlight"
+    "@value" : "Relation between the Streetlight class and the skos list about the power type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "powerType"
+  }, {
+    "@language" : "es",
+    "@value" : "tipoAlimentacion"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoAlumbrado",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Enlace a la lista skos que determina que tipo de alumbrado tienen las farolas"
+    "@value" : "Relación entre la clase Farola y la lista skos sobre el tipo de Alumbrado"
   }, {
     "@language" : "en",
-    "@value" : "Link to the skos list that determines what type of lighting has a streetlight"
+    "@value" : "Relation between the Streetlight class and the skos list about the types of lighting"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "lightingType"
+  }, {
+    "@language" : "es",
+    "@value" : "tipoAlumbrado"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoCable",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Enlace a la lista skos que determina que tipo de cable tienen las farolas"
+    "@value" : "Relación entre la clase Caja y la lista skos sobre los tipos de cables"
   }, {
     "@language" : "en",
-    "@value" : "Link to the skos list that determines what type of cable has a streetlight"
+    "@value" : "Relation between the Box class ant the skos list about the type of cable"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Caja"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cableType"
+  }, {
+    "@language" : "es",
+    "@value" : "tipoCable"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoIluminacion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Enlace a la lista skos que determina el tipo de iluminación que se utiliza en la farola"
+    "@value" : "Relación entre la clase Farola y la lista skos sobre el tipo de Iluminación"
   }, {
     "@language" : "en",
-    "@value" : "Link to the skos list that determines what type of ilumination has a streetlight"
+    "@value" : "Relation between the Streetlight class and the skos list about the types of iluminations"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IluminationType"
+  }, {
+    "@language" : "es",
+    "@value" : "tipoIluminacion"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLampara",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Enlace a la lista skos que determina el tipo de bombilla que se utiliza en la farola"
+    "@value" : "Relación entre la clase Lámpara y la lista skos sobre el tipo de lámpara"
   }, {
     "@language" : "en",
-    "@value" : "Link to the skos list that determines what type of bulb has a streetlight"
+    "@value" : "Relation between the Lamp class and the skos list about the types of lamps"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "lampType"
+  }, {
+    "@language" : "es",
+    "@value" : "tipoLampara"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoLuminaria",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Enlace a la lista skos que determina que tipo de Luminaria tienen las farolas"
+    "@value" : "Relación entre la clase Luminaria y la lista skos sobre el tipo de luminaria"
   }, {
     "@language" : "en",
-    "@value" : "Link to the skos list that determines what type of luminary has the streetlight"
+    "@value" : "Relation between the Luminary class and the skos list about the types of luminaries"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "luminaryType"
+  }, {
+    "@language" : "es",
+    "@value" : "tipoLuminaria"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tipoSoporte",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Enlace a la lista skos que determina que tipo de soporte tienen las farolas"
+    "@value" : "Relación entre la clase Poste y la lista skos sobre los tipos de postes"
   }, {
     "@language" : "en",
-    "@value" : "Link to the skos list that determines what type of pole has a streetlight"
+    "@value" : "Relation between the Pole class and the skos list about the types of holers"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "holderType"
+  }, {
+    "@language" : "es",
+    "@value" : "tipoSoporte"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal/index-en.html"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DireccionPostal"
+  }, {
+    "@language" : "es",
+    "@value" : "DireccionPostal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org#PostalAddress"
@@ -1011,6 +983,146 @@
     "@value" : "id"
   } ]
 }, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlimentacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Enlace a la lista skos que determina que tipo de alimentacion tienen las farolas"
+  }, {
+    "@language" : "en",
+    "@value" : "Link to the skos list that determines what type of source has a streetlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "powerType"
+  }, {
+    "@language" : "es",
+    "@value" : "tipoAlimentacion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoAlumbrado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Enlace a la lista skos que determina que tipo de alumbrado tienen las farolas"
+  }, {
+    "@language" : "en",
+    "@value" : "Link to the skos list that determines what type of lighting has a streetlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "lightingType"
+  }, {
+    "@language" : "es",
+    "@value" : "tipoAlumbrado"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre la clase Caja y la lista skos sobre los tipos de cable"
+  }, {
+    "@language" : "en",
+    "@value" : "Relation between the Box class and the skos list about the cable type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cableType"
+  }, {
+    "@language" : "es",
+    "@value" : "tipoCable"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoIluminacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Enlace a la lista skos que determina el tipo de iluminación que se utiliza en la farola"
+  }, {
+    "@language" : "en",
+    "@value" : "Link to the skos list that determines what type of iluminaation has a streetlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "iluminationType"
+  }, {
+    "@language" : "es",
+    "@value" : "tipoIluminacion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLampara",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Enlace a la lista skos que determina el tipo de lámpara que se utiliza en la farola"
+  }, {
+    "@language" : "en",
+    "@value" : "Link to the skos list that determines what type of lamp has a streetlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "lampType"
+  }, {
+    "@language" : "es",
+    "@value" : "tipoLampara"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoLuminaria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Enlace a la lista skos que determina el tipo de luminaria que tienen las farolas"
+  }, {
+    "@language" : "en",
+    "@value" : "Link to the skos list that determines what type of luminary has a streetlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LuminaryType"
+  }, {
+    "@language" : "es",
+    "@value" : "tipoLuminaria"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Enlace a la lista skos que determina que tipo de soporte tienen las farolas"
+  }, {
+    "@language" : "en",
+    "@value" : "Link to the skos list that determines what type of pole has a streetlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "holderType"
+  }, {
+    "@language" : "es",
+    "@value" : "tipoSoporte"
+  } ]
+}, {
   "@id" : "http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1090,6 +1202,13 @@
     "@language" : "es",
     "@value" : "http://www.opengis.net/spec/geosparql/1.1/req/core/feature-class"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature"
+  }, {
+    "@language" : "es",
+    "@value" : "Feature"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.opengis.net/spec/geosparql/SpatialObject"
   } ]
@@ -1109,6 +1228,13 @@
   }, {
     "@language" : "es",
     "@value" : "http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Geometry"
+  }, {
+    "@language" : "es",
+    "@value" : "Geometry"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.opengis.net/spec/geosparql/SpatialObject"
@@ -1162,6 +1288,13 @@
   }, {
     "@language" : "es",
     "@value" : "http://www.opengis.net/spec/geosparql/1.1/req/core/spatial-object-class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SpatialObject"
+  }, {
+    "@language" : "es",
+    "@value" : "SpatialObject"
   } ]
 }, {
   "@id" : "http://www.opengis.net/spec/geosparql/hasGeometry",
