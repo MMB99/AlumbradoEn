@@ -78,7 +78,6 @@
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio"/>
     </owl:ObjectProperty>
     
 
@@ -237,7 +236,6 @@ Every luminary has a bulb</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/secctor-public/territorio/distrito">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito"/>
     </owl:ObjectProperty>
     
 
@@ -310,26 +308,6 @@ Every luminary has a bulb</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="es">https://schema.org/streetAddress</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">streetAddress</rdfs:label>
         <rdfs:label xml:lang="es">streetAddress</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio -->
-
-
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito -->
-
-
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito"/>
-        <rdfs:label xml:lang="en">district</rdfs:label>
-        <rdfs:label xml:lang="es">distrito</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -629,6 +607,7 @@ Every luminary has a bulb</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/spec/geosparql#Longitude">
         <rdfs:domain rdf:resource="http://www.opengis.net/spec/geosparql/Point"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:comment xml:lang="es">La longitud WGS84 para un SpatialThing</rdfs:comment>
         <rdfs:comment xml:lang="en">The WGS84 longitude of a SpatialThing</rdfs:comment>
         <rdfs:label xml:lang="en">Longitude</rdfs:label>
@@ -642,6 +621,7 @@ Every luminary has a bulb</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.opengis.net/spec/geosparql/Latitude">
         <rdfs:domain rdf:resource="http://www.opengis.net/spec/geosparql/Point"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:comment xml:lang="es">La latitud WGS84 de un SpatialThing</rdfs:comment>
         <rdfs:comment xml:lang="en">The WGS84 latitude of a SpatialThing</rdfs:comment>
         <rdfs:label xml:lang="en">Latitude</rdfs:label>
@@ -761,22 +741,26 @@ Every luminary has a bulb</rdfs:comment>
     
 
 
-    <!-- http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio -->
+    <!-- http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio -->
 
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio">
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio">
+        <rdfs:comment xml:lang="en">Identity subdivision of a town or a village</rdfs:comment>
         <rdfs:comment xml:lang="es">Subdivisión con identidad propia de una ciudad o pueblo</rdfs:comment>
-        <rdfs:isDefinedBy>http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="es">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">Barrio</rdfs:label>
         <rdfs:label xml:lang="en">Neighborhood</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito -->
+    <!-- http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito -->
 
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito">
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito">
+        <rdfs:comment xml:lang="en">Part into wich a population, territory or other place is divided for administrative or legal purposes</rdfs:comment>
+        <rdfs:comment xml:lang="es">Parte en que se divide una población, un territorio u otro lugar con fines administrativos o jurídicos</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html</rdfs:isDefinedBy>
         <rdfs:isDefinedBy xml:lang="es">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">District</rdfs:label>
@@ -790,6 +774,7 @@ Every luminary has a bulb</rdfs:comment>
 
     <owl:Class rdf:about="http://www.opengis.net/spec/geosparql/Feature">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/spec/geosparql/SpatialObject"/>
+        <owl:disjointWith rdf:resource="http://www.opengis.net/spec/geosparql/Geometry"/>
         <rdfs:comment xml:lang="es">Esta clase representa el nivel máximo del tipo feature. Es superclase de todos los tipos de features.</rdfs:comment>
         <rdfs:comment xml:lang="en">This class represents the top-level feature type. It is superclass of all feature types.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://www.opengis.net/spec/geosparql/1.1/req/core/feature-class</rdfs:isDefinedBy>
@@ -953,22 +938,6 @@ Every luminary has a bulb</rdfs:comment>
         <rdfs:label xml:lang="en">holderType</rdfs:label>
         <rdfs:label xml:lang="es">tipoSoporte</rdfs:label>
     </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio">
-        <rdfs:label xml:lang="es">barrio</rdfs:label>
-        <rdfs:label xml:lang="en">neighborhood</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 

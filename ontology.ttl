@@ -44,8 +44,7 @@
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio> rdf:type owl:ObjectProperty ;
-                                                                                rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> ;
-                                                                                rdfs:range <http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio> .
+                                                                                rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#caja
@@ -155,8 +154,7 @@ Every luminary has a bulb"""@en ;
 
 ###  http://vocab.linkeddata.es/def/secctor-public/territorio/distrito
 <http://vocab.linkeddata.es/def/secctor-public/territorio/distrito> rdf:type owl:ObjectProperty ;
-                                                                    rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> ;
-                                                                    rdfs:range <http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito> .
+                                                                    rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> .
 
 
 ###  http://www.opengis.net/spec/geosparql/hasGeometry
@@ -205,18 +203,6 @@ Every luminary has a bulb"""@en ;
                                                    "https://schema.org/streetAddress"@es ;
                                   rdfs:label "streetAddress"@en ,
                                              "streetAddress"@es .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio> rdf:type owl:DatatypeProperty ;
-                                                                                rdfs:domain <http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio> .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito> rdf:type owl:DatatypeProperty ;
-                                                                                  rdfs:domain <http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito> ;
-                                                                                  rdfs:label "district"@en ,
-                                                                                             "distrito"@es .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#accesorios
@@ -424,6 +410,7 @@ Every luminary has a bulb"""@en ;
 ###  http://www.opengis.net/spec/geosparql#Longitude
 <http://www.opengis.net/spec/geosparql#Longitude> rdf:type owl:DatatypeProperty ;
                                                   rdfs:domain <http://www.opengis.net/spec/geosparql/Point> ;
+                                                  rdfs:range xsd:double ;
                                                   rdfs:comment "La longitud WGS84 para un SpatialThing"@es ,
                                                                "The WGS84 longitude of a SpatialThing"@en ;
                                                   rdfs:label "Longitude"@en ,
@@ -433,6 +420,7 @@ Every luminary has a bulb"""@en ;
 ###  http://www.opengis.net/spec/geosparql/Latitude
 <http://www.opengis.net/spec/geosparql/Latitude> rdf:type owl:DatatypeProperty ;
                                                  rdfs:domain <http://www.opengis.net/spec/geosparql/Point> ;
+                                                 rdfs:range xsd:double ;
                                                  rdfs:comment "La latitud WGS84 de un SpatialThing"@es ,
                                                               "The WGS84 latitude of a SpatialThing"@en ;
                                                  rdfs:label "Latitude"@en ,
@@ -510,16 +498,20 @@ Every luminary has a bulb"""@en ;
                                                                                                                          "Equipment"@en .
 
 
-###  http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio
-<http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio> rdf:type owl:Class ;
-                                                                  rdfs:comment "Subdivisión con identidad propia de una ciudad o pueblo"@es ;
-                                                                  rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html" ;
+###  http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio> rdf:type owl:Class ;
+                                                                  rdfs:comment "Identity subdivision of a town or a village"@en ,
+                                                                               "Subdivisión con identidad propia de una ciudad o pueblo"@es ;
+                                                                  rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"@en ,
+                                                                                   "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"@es ;
                                                                   rdfs:label "Barrio"@es ,
                                                                              "Neighborhood"@en .
 
 
-###  http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito
-<http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito> rdf:type owl:Class ;
+###  http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito> rdf:type owl:Class ;
+                                                                    rdfs:comment "Part into wich a population, territory or other place is divided for administrative or legal purposes"@en ,
+                                                                                 "Parte en que se divide una población, un territorio u otro lugar con fines administrativos o jurídicos"@es ;
                                                                     rdfs:isDefinedBy "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"@en ,
                                                                                      "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"@es ;
                                                                     rdfs:label "District"@en ,
@@ -529,6 +521,7 @@ Every luminary has a bulb"""@en ;
 ###  http://www.opengis.net/spec/geosparql/Feature
 <http://www.opengis.net/spec/geosparql/Feature> rdf:type owl:Class ;
                                                 rdfs:subClassOf <http://www.opengis.net/spec/geosparql/SpatialObject> ;
+                                                owl:disjointWith <http://www.opengis.net/spec/geosparql/Geometry> ;
                                                 rdfs:comment "Esta clase representa el nivel máximo del tipo feature. Es superclase de todos los tipos de features."@es ,
                                                              "This class represents the top-level feature type. It is superclass of all feature types."@en ;
                                                 rdfs:isDefinedBy "http://www.opengis.net/spec/geosparql/1.1/req/core/feature-class"@en ,
@@ -639,14 +632,6 @@ Every luminary has a bulb"""@en ;
                                                                                                                      "Link to the skos list that determines what type of pole has a streetlight"@en ;
                                                                                                         rdfs:label "holderType"@en ,
                                                                                                                    "tipoSoporte"@es .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio> rdfs:label "barrio"@es ,
-                                                                                           "neighborhood"@en .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

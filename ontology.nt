@@ -43,7 +43,6 @@
 # http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio> .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#caja
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#caja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -140,7 +139,6 @@
 # http://vocab.linkeddata.es/def/secctor-public/territorio/distrito
 <http://vocab.linkeddata.es/def/secctor-public/territorio/distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/def/secctor-public/territorio/distrito> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> .
-<http://vocab.linkeddata.es/def/secctor-public/territorio/distrito> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito> .
 # 
 # http://www.opengis.net/spec/geosparql/hasGeometry
 <http://www.opengis.net/spec/geosparql/hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -190,16 +188,6 @@
 <http://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://schema.org/streetAddress"@es .
 <http://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#label> "streetAddress"@en .
 <http://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#label> "streetAddress"@es .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio> .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito> <http://www.w3.org/2000/01/rdf-schema#label> "district"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito> <http://www.w3.org/2000/01/rdf-schema#label> "distrito"@es .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#accesorios
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#accesorios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -384,6 +372,7 @@
 # http://www.opengis.net/spec/geosparql#Longitude
 <http://www.opengis.net/spec/geosparql#Longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.opengis.net/spec/geosparql#Longitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/spec/geosparql/Point> .
+<http://www.opengis.net/spec/geosparql#Longitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://www.opengis.net/spec/geosparql#Longitude> <http://www.w3.org/2000/01/rdf-schema#comment> "La longitud WGS84 para un SpatialThing"@es .
 <http://www.opengis.net/spec/geosparql#Longitude> <http://www.w3.org/2000/01/rdf-schema#comment> "The WGS84 longitude of a SpatialThing"@en .
 <http://www.opengis.net/spec/geosparql#Longitude> <http://www.w3.org/2000/01/rdf-schema#label> "Longitude"@en .
@@ -392,6 +381,7 @@
 # http://www.opengis.net/spec/geosparql/Latitude
 <http://www.opengis.net/spec/geosparql/Latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.opengis.net/spec/geosparql/Latitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/spec/geosparql/Point> .
+<http://www.opengis.net/spec/geosparql/Latitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://www.opengis.net/spec/geosparql/Latitude> <http://www.w3.org/2000/01/rdf-schema#comment> "La latitud WGS84 de un SpatialThing"@es .
 <http://www.opengis.net/spec/geosparql/Latitude> <http://www.w3.org/2000/01/rdf-schema#comment> "The WGS84 latitude of a SpatialThing"@en .
 <http://www.opengis.net/spec/geosparql/Latitude> <http://www.w3.org/2000/01/rdf-schema#label> "Latitude"@en .
@@ -465,23 +455,28 @@
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> <http://www.w3.org/2000/01/rdf-schema#label> "Equipamiento"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> <http://www.w3.org/2000/01/rdf-schema#label> "Equipment"@en .
 # 
-# http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio
-<http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#comment> "Subdivisión con identidad propia de una ciudad o pueblo"@es .
-<http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html" .
-<http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#label> "Barrio"@es .
-<http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#label> "Neighborhood"@en .
+# http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#comment> "Identity subdivision of a town or a village"@en .
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#comment> "Subdivisión con identidad propia de una ciudad o pueblo"@es .
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"@en .
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"@es .
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#label> "Barrio"@es .
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#label> "Neighborhood"@en .
 # 
-# http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito
-<http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"@en .
-<http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"@es .
-<http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#label> "District"@en .
-<http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#label> "Distrito"@es .
+# http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#comment> "Part into wich a population, territory or other place is divided for administrative or legal purposes"@en .
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#comment> "Parte en que se divide una población, un territorio u otro lugar con fines administrativos o jurídicos"@es .
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"@en .
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"@es .
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#label> "District"@en .
+<http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#label> "Distrito"@es .
 # 
 # http://www.opengis.net/spec/geosparql/Feature
 <http://www.opengis.net/spec/geosparql/Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.opengis.net/spec/geosparql/Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/spec/geosparql/SpatialObject> .
+<http://www.opengis.net/spec/geosparql/Feature> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.opengis.net/spec/geosparql/Geometry> .
 <http://www.opengis.net/spec/geosparql/Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta clase representa el nivel máximo del tipo feature. Es superclase de todos los tipos de features."@es .
 <http://www.opengis.net/spec/geosparql/Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the top-level feature type. It is superclass of all feature types."@en .
 <http://www.opengis.net/spec/geosparql/Feature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/spec/geosparql/1.1/req/core/feature-class"@en .
@@ -586,17 +581,5 @@
 <http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the skos list that determines what type of pole has a streetlight"@en .
 <http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte> <http://www.w3.org/2000/01/rdf-schema#label> "holderType"@en .
 <http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte> <http://www.w3.org/2000/01/rdf-schema#label> "tipoSoporte"@es .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio> <http://www.w3.org/2000/01/rdf-schema#label> "barrio"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio> <http://www.w3.org/2000/01/rdf-schema#label> "neighborhood"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

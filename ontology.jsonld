@@ -129,34 +129,9 @@
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"
-  }, {
-    "@id" : "http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "barrio"
-  }, {
-    "@language" : "en",
-    "@value" : "neighborhood"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "district"
-  }, {
-    "@language" : "es",
-    "@value" : "distrito"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico",
@@ -1123,13 +1098,26 @@
     "@value" : "tipoSoporte"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio",
+  "@id" : "http://vocab.linkeddata.es/def/secctor-public/territorio/distrito",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identity subdivision of a town or a village"
+  }, {
     "@language" : "es",
     "@value" : "Subdivisión con identidad propia de una ciudad o pueblo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"
+  }, {
+    "@language" : "es",
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1140,8 +1128,15 @@
     "@value" : "Neighborhood"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito",
+  "@id" : "http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Part into wich a population, territory or other place is divided for administrative or legal purposes"
+  }, {
+    "@language" : "es",
+    "@value" : "Parte en que se divide una población, un territorio u otro lugar con fines administrativos o jurídicos"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html"
@@ -1155,15 +1150,6 @@
   }, {
     "@language" : "es",
     "@value" : "Distrito"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/def/secctor-public/territorio/distrito",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito"
   } ]
 }, {
   "@id" : "http://www.opengis.net/spec/geosparql#Longitude",
@@ -1184,6 +1170,9 @@
   }, {
     "@language" : "es",
     "@value" : "Longitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
   "@id" : "http://www.opengis.net/spec/geosparql/Feature",
@@ -1211,6 +1200,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.opengis.net/spec/geosparql/SpatialObject"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.opengis.net/spec/geosparql/Geometry"
   } ]
 }, {
   "@id" : "http://www.opengis.net/spec/geosparql/Geometry",
@@ -1258,6 +1250,9 @@
   }, {
     "@language" : "es",
     "@value" : "Latitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
   "@id" : "http://www.opengis.net/spec/geosparql/Point",
