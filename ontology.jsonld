@@ -7,6 +7,13 @@
 }, {
   "@id" : "http://schema.org#PostalAddress",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta clase se utiliza para la descripción de la dirección postal"
+  }, {
+    "@language" : "en",
+    "@value" : "This class is used to describe the postal address"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
     "@value" : "https://schema.org/PostalAddress"
@@ -49,20 +56,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "País al que pertenece"
+    "@value" : "País en el que la farola está ubicada"
   }, {
     "@language" : "en",
-    "@value" : "The country"
+    "@value" : "The country in which the streetlight is located"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://schema.org#PostalAddress"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
-    "@value" : "https://schema.org/addressCountry"
+    "@value" : "https://schema.org"
   }, {
     "@language" : "es",
-    "@value" : "https://schema.org/addressCountry"
+    "@value" : "https://schema.org"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -79,20 +86,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "La localidad en la que está la calle"
+    "@value" : "Localidad en la que está la calle a la que pertenece la farola"
   }, {
     "@language" : "en",
-    "@value" : "The locality in wich the street address is"
+    "@value" : "The locality in which the street to which the lamppost belongs is situated"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://schema.org#PostalAddress"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
-    "@value" : "https://schema.org/addressLocality"
+    "@value" : "https://schema.org"
   }, {
     "@language" : "es",
-    "@value" : "https://schema.org/addressLocality"
+    "@value" : "https://schema.org"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -107,15 +114,22 @@
 }, {
   "@id" : "http://schema.org/streetAddress",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Name of the street where the streetlight is located  also including the number and the venue type"
+  }, {
+    "@language" : "es",
+    "@value" : "Nombre de la calle en la que está la farola en la que también se incluye el número y el tipo de vía"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://schema.org#PostalAddress"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
-    "@value" : "https://schema.org/streetAddress"
+    "@value" : "https://schema.org"
   }, {
     "@language" : "es",
-    "@value" : "https://schema.org/streetAddress"
+    "@value" : "https://schema.org"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -130,8 +144,25 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre la clase DireccionPostal y la clase Barrio"
+  }, {
+    "@language" : "en",
+    "@value" : "Relation between the PostalAddress class and the Neighborhood class"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "barrio"
+  }, {
+    "@language" : "en",
+    "@value" : "neighborhood"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico",
@@ -162,7 +193,7 @@
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico/index-en.html"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico/index-en.html/1"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Caja",
@@ -206,10 +237,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Es la bombilla de la farola"
+    "@value" : "Es la bombilla de la farola y es un convertidor de energía que transforma la energía eléctrica en luz"
   }, {
     "@language" : "en",
-    "@value" : "It is the bulb from the streetlight"
+    "@value" : "It is the bulb in the streetlight and is an energy converter that transforms electrical energy into light."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -243,7 +274,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Clase que representa la columna que se coloca de forma vertical que srive de apoyo"
+    "@value" : "Clase que representa la columna que se coloca de forma vertical que sirve de apoyo"
   }, {
     "@language" : "en",
     "@value" : "Class that represents the column that is placed verticaly so it helps as a support"
@@ -258,6 +289,13 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#accesorios",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Los accesorios que puede tener una farola como por ejemplo un medidor de contaminación acústica, cámaras de seguridad, medidores de CO2, etc."
+  }, {
+    "@language" : "en",
+    "@value" : "The accesories that a streetlight can have are some like an acoustic measurer, C02 measurer, CTV, and so on."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste"
   } ],
@@ -274,6 +312,13 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#altura",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Altura de la farola desde el suelo hasta la parte más alta del poste"
+  }, {
+    "@language" : "en",
+    "@value" : "Heigh of the streetlight from the floor to the top of the pole"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
   } ],
@@ -336,6 +381,13 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#anchura",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Distance occupied by a streetlight from one of its luminaires to its opposite one"
+  }, {
+    "@language" : "es",
+    "@value" : "Distancia que ocupa una farola desde una de sus luminarias hasta su opuesta"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
   } ],
@@ -354,10 +406,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Cada farola puede tener una caja"
+    "@value" : "Relación entre la clase farola y la clase caja que forma parte de ella. Cada farola puede tener una caja"
   }, {
     "@language" : "en",
-    "@value" : "Every streetlight can have a box"
+    "@value" : "Relation between the streetlight class and the box class that is part of it. Each streetlight can have a box"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
@@ -375,6 +427,13 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#consumo",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Consumo de la bombilla de la lámpara"
+  }, {
+    "@language" : "en",
+    "@value" : "lamp bulb consumption"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara"
   } ],
@@ -391,6 +450,13 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#fabricante",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Company that manufactures the materials which the streetlight is made of"
+  }, {
+    "@language" : "es",
+    "@value" : "Compañía que fabrica los materiales de los que está formada la farola"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Caja"
   }, {
@@ -436,6 +502,13 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#horasDeFuncionamiento",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Number of ours  that the streetlight spends activated"
+  }, {
+    "@language" : "es",
+    "@value" : "Número de horas en las que el alumbrado se encuentra encendido"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
   } ],
@@ -452,6 +525,13 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#intensidadLuminica",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La intensidad lumínica es la cantidad de flujo luminoso que emite una fuente por unidad de ángulo sólido"
+  }, {
+    "@language" : "en",
+    "@value" : "Luminous intensity is the amount of luminous flux emitted by a source per unit solid angle"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara"
   } ],
@@ -470,10 +550,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Cada farola puede tener de una a varias luminarias"
+    "@value" : "Relación entre la clase farola y la clase luminaria que forma parte de ella. Cada farola puede tener una o varias luminarias"
   }, {
     "@language" : "en",
-    "@value" : "Every streetlight can have from one luminary to various of them"
+    "@value" : "Relation between the streetlight class and the luminaire class that is part of it. Each streetlight may have one or more luminaires."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
@@ -491,6 +571,13 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#material",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Material del que están hechas las partes de la farola"
+  }, {
+    "@language" : "en",
+    "@value" : "Material of which the streetlight parts are made"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Caja"
   }, {
@@ -513,6 +600,13 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#metodoDeControl",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Method of controlling the streetlight by which they are activated or deactivated"
+  }, {
+    "@language" : "es",
+    "@value" : "Método de control de la farola con el que se activan o desactivan"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
   } ],
@@ -529,6 +623,13 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#modeloBombilla",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El modelo de bombilla de la lámpara"
+  }, {
+    "@language" : "en",
+    "@value" : "The bulb model of the lamp"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
   } ],
@@ -545,6 +646,13 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#numeroDeBrazos",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La farola puede tener de uno a varios brazos, esto depende de su función que se le quiera dar a cada uno"
+  }, {
+    "@language" : "en",
+    "@value" : "The streetlight can have from one to several arms, it depends on the function you want to give to each one."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste"
   } ],
@@ -557,13 +665,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#numeroDeLamparas",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El número de lámparas que tiene una farola. Además, tendrá que tener el mismo número que de luminarias."
+  }, {
+    "@language" : "en",
+    "@value" : "The number of lamps that a streetlight has. It should have the same number as luminaries."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara"
   } ],
@@ -580,6 +692,13 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#numeroDeLuminarias",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El número de luminarias que tiene una farola. Además tendrá que ser el mismo número de lámparas."
+  }, {
+    "@language" : "en",
+    "@value" : "The number of luminaries that has a streetlight. There should be the same number of lamps."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria"
   } ],
@@ -598,10 +717,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Cada farola puede tener un poste"
+    "@value" : "Relación entre la clase farola y la clase poste que forma parte de ella. Cada farola puede tener un poste"
   }, {
     "@language" : "en",
-    "@value" : "Every streetlight can have a pole"
+    "@value" : "Relation between the streetlight class and the pole class that is part of it. Each streetlight can have a pole"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
@@ -619,6 +738,13 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#potencia",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Amount of energy consumed by a light bulb"
+  }, {
+    "@language" : "es",
+    "@value" : "Cantidad de energía que consume una bombilla"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara"
   } ],
@@ -635,6 +761,13 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#propietario",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Entidad a la que pertenece la farola"
+  }, {
+    "@language" : "en",
+    "@value" : "Entity that has ownership over the streetlight"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
   } ],
@@ -676,10 +809,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Relación entre la clase Farola y la lista skos sobre el tipo de alimentación"
+    "@value" : "Relación entre la clase Farola y la lista skos sobre el tipo de alimentación que puede tener una farola"
   }, {
     "@language" : "en",
-    "@value" : "Relation between the Streetlight class and the skos list about the power type"
+    "@value" : "Relation between the Streetlight class and the skos list about the power type that a streetlight can have"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
@@ -696,10 +829,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Relación entre la clase Farola y la lista skos sobre el tipo de Alumbrado"
+    "@value" : "Relación entre la clase Farola y la lista skos sobre el tipo de Alumbrado que puede tener una farola"
   }, {
     "@language" : "en",
-    "@value" : "Relation between the Streetlight class and the skos list about the types of lighting"
+    "@value" : "Relation between the Streetlight class and the skos list about the types of lighting that a streetlight can have"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
@@ -716,10 +849,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Relación entre la clase Caja y la lista skos sobre los tipos de cables"
+    "@value" : "Relación entre la clase Caja y la lista skos sobre los tipos de cables que puede tener una farola"
   }, {
     "@language" : "en",
-    "@value" : "Relation between the Box class ant the skos list about the type of cable"
+    "@value" : "Relation between the Box class ant the skos list about the type of cable that a streetlight can have"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Caja"
@@ -736,10 +869,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Relación entre la clase Farola y la lista skos sobre el tipo de Iluminación"
+    "@value" : "Relación entre la clase Farola y la lista skos sobre el tipo de Iluminación que puede tener una farola"
   }, {
     "@language" : "en",
-    "@value" : "Relation between the Streetlight class and the skos list about the types of iluminations"
+    "@value" : "Relation between the Streetlight class and the skos list about the types of iluminations that a streetlight can have"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola"
@@ -756,10 +889,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Relación entre la clase Lámpara y la lista skos sobre el tipo de lámpara"
+    "@value" : "Relación entre la clase Lámpara y la lista skos sobre el tipo de lámpara que puede tener una farola"
   }, {
     "@language" : "en",
-    "@value" : "Relation between the Lamp class and the skos list about the types of lamps"
+    "@value" : "Relation between the Lamp class and the skos list about the types of lamps that can have a streetlight"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Lampara"
@@ -776,10 +909,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Relación entre la clase Luminaria y la lista skos sobre el tipo de luminaria"
+    "@value" : "Relación entre la clase Luminaria y la lista skos sobre el tipo de luminaria que puede tener una farola"
   }, {
     "@language" : "en",
-    "@value" : "Relation between the Luminary class and the skos list about the types of luminaries"
+    "@value" : "Relation between the Luminary class and the skos list about the types of luminaries that a streetlight can have"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Luminaria"
@@ -796,10 +929,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Relación entre la clase Poste y la lista skos sobre los tipos de postes"
+    "@value" : "Relación entre la clase Poste y la lista skos sobre los tipos de postes que puede tener una farola"
   }, {
     "@language" : "en",
-    "@value" : "Relation between the Pole class and the skos list about the types of holers"
+    "@value" : "Relation between the Pole class and the skos list about the types of holders that a streetlight can have"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste"
@@ -814,6 +947,13 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta clase reutilizada se usa para la descripción de una dirección postal"
+  }, {
+    "@language" : "en",
+    "@value" : "This reused class is used for the description of a postal address"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal/index-en.html"
   } ],
@@ -949,6 +1089,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal"
+  }, {
+    "@language" : "es",
+    "@value" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1102,6 +1249,22 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Relacióne entre la clase DireccionPostal y la clase Distrito"
+  }, {
+    "@language" : "en",
+    "@value" : "Relation between the PostalAddress class from the vocabulary of opencitydata  and the DIstrict class."
+  }, {
+    "@language" : "en",
+    "@value" : "district"
+  }, {
+    "@language" : "es",
+    "@value" : "distrito"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio",
@@ -1164,6 +1327,13 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.opengis.net/spec/geosparql/Point"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://www.opengis.net/spec/geosparql/1.0"
+  }, {
+    "@language" : "es",
+    "@value" : "http://www.opengis.net/spec/geosparql/1.0"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Longitude"
@@ -1178,11 +1348,11 @@
   "@id" : "http://www.opengis.net/spec/geosparql/Feature",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Esta clase representa el nivel máximo del tipo feature. Es superclase de todos los tipos de features."
-  }, {
     "@language" : "en",
-    "@value" : "This class represents the top-level feature type. It is superclass of all feature types."
+    "@value" : "It represents the top level of the feature type. This class is equivalent to the GFI_Feature defined by ISO 19156, and is the superclass of all feature types."
+  }, {
+    "@language" : "es",
+    "@value" : "Representa el máximo nivel del tipo feature. Esta clase es equivalente al GFI_Feature definida por la ISO 19156, y es la superclase de todos los tipos de feature"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
@@ -1208,11 +1378,11 @@
   "@id" : "http://www.opengis.net/spec/geosparql/Geometry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Geometry representa el nivel más alto del tipo geometry"
-  }, {
     "@language" : "en",
-    "@value" : "Geometry represents the top level geometry type."
+    "@value" : "It represents the top level of the geometry type. This class is equivalent to the UML GM_Objects class defined in ISO 19107, and is a superclass of all geometry types."
+  }, {
+    "@language" : "es",
+    "@value" : "Representa el máximo nivel del tipo geometry. Esta clase es equivalente a la clase UML GM_Objects definida en la ISO 19107, y es superclase de todos los tipos de geometry"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
@@ -1243,6 +1413,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.opengis.net/spec/geosparql/Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://www.opengis.net/spec/geosparql/1.0"
+  }, {
+    "@language" : "es",
+    "@value" : "http://www.opengis.net/spec/geosparql/1.0"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
